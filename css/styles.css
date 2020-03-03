@@ -149,6 +149,7 @@ body {
 
 /*body*/
 .red {
-  color: red;
-
+  color: #3e8e41;
+  background-color: red;
+  font-weight: bold;
 }
