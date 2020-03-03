@@ -61,3 +61,12 @@ body {
 .nav-item:hover {
   background-color: #3e8e41;
 }
+
+/*forum */ 
+table, th, td {
+  border: 1px solid black;
+}
+
+.jumbotron {
+  color: #3e8e41;
+}
