@@ -7,23 +7,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
-  <style>
-
-  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-
   <div class="container">
-    <div class="jumbotron jumbohead text-center" style="margin-bottom:0">
-      <div class="jumbotext">
-        <h1>NADAI GAME REVIEW</h1>
-        <p>GET YOUR GAMES RIGHT</p>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/slide11.jpg" alt="First slide" height="800px">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>NADAI GAME REVIEW</h5>
+            <p>...</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/slide2.jpg" alt="Second slide" height="800px">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>NADAI GAME REVIEW</h5>
+            <p>...</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/slide3.jpg" alt="Third slide" height="800px">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>NADAI GAME REVIEW</h5>
+            <p>...</p>
+          </div>
+        </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
 
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="navbar">
       <a class="navbar-brand" href="#">NADAI GAME REVIEW</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -62,48 +92,176 @@
         </ul>
       </div>
     </nav>
+
+
     <!--BODY-->
-    <div class="card">
-      <div class="card-header">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Dec 7, 2017</h5>
+
+    <div class="card border-danger">
+      <div class="card-header red">
+        <h2><strong>POPULAR</strong></h2>
       </div>
       <div class="card-body">
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco.</p>
+        <div class="card-deck">
+          <div class="card border-success" style="width: 18rem;">
+            <img class="card-img-top" src="images/logo1.png" alt="Card image cap" width="286" height="180">
+            <div class="card-body">
+              <h5 class="card-title">CS:GO</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
+            </div>
+          </div>
+          <div class="card border-danger" style="width: 18rem;">
+            <img class="card-img-top" src="images/logo2.png" alt="Card image cap" width="286" height="180">
+            <div class="card-body">
+              <h5 class="card-title">Dirt Rally</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
+            </div>
+          </div>
+          <div class="card border-success" style="width: 18rem;">
+            <img class="card-img-top" src="images/logo3.png" alt="Card image cap" width="286" height="180">
+            <div class="card-body">
+              <h5 class="card-title">Call of Duty</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
+            </div>
+          </div>
+          <div class="card border-danger" style="width: 18rem;">
+            <img class="card-img-top" src="images/logo4.jpeg" alt="Card image cap" width="286" height="180">
+            <div class="card-body">
+              <h5 class="card-title">Apex Legends</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
+            </div>
+          </div>
+        </div>
         <br>
+        <div class="card-deck">
+          <div class="card border-danger" style="width: 18rem;">
+            <img class="card-img-top" src="images/logo5.png" alt="Card image cap" width="286" height="180">
+            <div class="card-body">
+              <h5 class="card-title">God of War</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
+            </div>
+          </div>
+          <div class="card border-success" style="width: 18rem;">
+            <img class="card-img-top" src="images/logo4.jpeg" alt="Card image cap" width="286" height="180">
+            <div class="card-body">
+              <h5 class="card-title">NBA 2K20</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
+            </div>
+          </div>
+          <div class="card border-danger" style="width: 18rem;">
+            <img class="card-img-top" src="images/logo3.png" alt="Card image cap" width="286" height="180">
+            <div class="card-body">
+              <h5 class="card-title">Assassins Creed Odessey</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
+            </div>
+          </div>
+          <div class="card border-success" style="width: 18rem;">
+            <img class="card-img-top" src="images/logo2.png" alt="Card image cap" width="286" height="180">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="card-deck">
+          <div class="card border-success" style="width: 18rem;">
+            <img class="card-img-top" src="images/logo1.png" alt="Card image cap" width="286" height="180">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
+            </div>
+          </div>
+          <div class="card border-danger" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap" width="286" height="180">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
+            </div>
+          </div>
+          <div class="card border-success" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap" width="286" height="180">
+            <div class=" card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
+            </div>
+          </div>
+          <div class="card border-danger" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap" width="286" height="180">
+            <div class=" card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <br>
     <div class="card">
-      <div class="card-header">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Dec 7, 2017</h5>
+      <div class="card-header red">
+        <h2>NEWS</h2>
       </div>
       <div class="card-body">
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco.</p>
+        <div class="card">
+          <div class="card-header">
+            <h2>The gaming chair has been replaced by the gaming bed</h2>
+            <h5>Mar 3, 2020</h5>
+          </div>
+          <div class="card-body">
+            <img class="card-img-top" src="images/concept_gaming_bed_6.0.webp" alt="">
+            <p>Japanese retailer Bauhutte sells a great deal of furniture aimed at “gamers,”
+              but few can top its one-stop shop for sleep and gaming. Like Voltron, but made
+              for people who refuse to use major muscle groups, the Bauhutte “ultimate gaming bed”
+              combines an elevated headboard, desk, snack shelves, tablet holder, and a bed to
+              ensure you will only have to get up to use the bathroom, hopefully.</p>
+            <p>The full setup, which turns eight different products into a cocoon, costs
+              roughly ¥113,250, or about $1,048 (snacks sold separately). “I wake up and move from
+              my bed to my desk,” its description reads. “Why is that so complicated? Gaming beds
+              solve this problem.”</p>
+            <br>
+          </div>
+        </div>
+        <br>
+        <div class="card">
+          <div class="card-header">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+          </div>
+          <div class="card-body">
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco.</p>
+            <br>
+          </div>
+        </div>
         <br>
       </div>
     </div>
     <br>
-    <div class="card">
-      <div class="card-header">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Dec 7, 2017</h5>
-      </div>
-      <div class="card-body">
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco.</p>
-        <br>
-      </div>
-    </div>
 
   </div>
   <!--FOOTER-->
@@ -111,4 +269,7 @@
     <p>Footer</p>
   </div>
   </div>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery-3.4.1.js.js"></script>
+  <script src="js/script.js"></script>
 </body>
