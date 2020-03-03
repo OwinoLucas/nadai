@@ -1,55 +1,77 @@
+//js for windows games//
 $(document).ready(function(){
     $("#press").click(function(){
-        $("#press").hide();
-        $(".hide1").fadeIn();
+        $("#press").slideToggle();
+        $(".hide1").slideToggle();
     });
     $(".hide1").click(function(){
-        $(".hide1").hide();
-        $("#press").fadeIn();
+        $(".hide1").slideToggle();
+        $("#press").slideToggle();
     });
 
-    $(".#press1").click(function(){
-        $("#press1").hide();
-        $(".hide2").fadeIn();
+    $("#press1").click(function(){
+        $("#press1").slideToggle();
+        $(".hide2").slideToggle();
     });
     $(".hide2").click(function(){
-        $(".hide2").hide();
-        $("#press1").fadeIn();
+        $(".hide2").slideToggle();
+        $("#press1").slideToggle();
     });
 
     $("#press2").click(function(){
-        $("#press2").hide();
-        $(".hide3").fadeIn();
+        $("#press2").slideToggle();
+        $(".hide3").slideToggle();
     });
     $(".hide3").click(function(){
-        $(".hide3").hide();
-        $("#press2").fadeIn();
+        $(".hide3").slideToggle();
+        $("#press2").slideToggle();
     });
 
     $("#press3").click(function(){
-        $("#press3").hide();
-        $(".hide4").fadeIn();
+        $("#press3").slideToggle();
+        $(".hide4").slideToggle();
     });
     $(".hide4").click(function(){
-        $("#press3").hide();
-        $("#press3").fadeIn();
+        $(".hide4").slideToggle();
+        $("#press3").slideToggle();
     });
 
     $("#press4").click(function(){
-        $("#press4").hide();
-        $(".hide5").fadeIn();
+        $("#press4").slideToggle();
+        $(".hide5").slideToggle();
     });
     $(".hide5").click(function(){
-        $("#press4").hide();
-        $("#press4").fadeIn();
+        $(".hide5").slideToggle();
+        $("#press4").slideToggle();
     });
 
     $("#press5").click(function(){
-        $("#press5").hide();
-        $(".hide6").fadeIn();
+        $("#press5").slideToggle();
+        $(".hide6").slideToggle();
     });
     $(".hide6").click(function(){
-        $("#press5").hide();
-        $("#press5").fadeIn();
+        $(".hide6").slideToggle();
+        $("#press5").slideToggle();
     });
 });
+
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds 
+}
