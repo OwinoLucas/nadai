@@ -79,6 +79,22 @@
     color: red;
 }
 
+.ficha1 {
+    display: none;
+}
+
+.ficha2 {
+    display: none;
+}
+
+.ficha3 {
+    display: none;
+}
+
+.ficha4 {
+    display: none;
+}
+
 .fullscreen-bg {
     position: fixed;
     top: 0;
