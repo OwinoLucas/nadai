@@ -137,6 +137,96 @@ body {
   background-color: #3e8e41;
 }
 
+.synopsis {
+  background-image: url("../images/gaming1.jpg");
+  background-repeat: no-repeat;
+  padding: 540px;
+  background-size: cover;
+  text-align: center;
+  margin-top: -400px;
+  margin-bottom: 300px;
+}
+.synopsisheader h1 {
+  color: aqua;
+}
+.synopsisheader h3 {
+  color: plum
+}
+.synopsiscontent {
+  color: white;
+}
+.history {
+  background-image: url("../images/gaming4.jpg");
+  background-repeat: no-repeat;
+  padding: 500px;
+  background-size: cover;
+  text-align: center;
+  margin-top: -300px;
+}
+.historyheader h1 {
+  color: aqua;
+  margin-top: -430px;
+}
+.historyheader h3 {
+  color: plum
+}
+.historycontent {
+  color: white;
+}
+.team {
+  background-image: url("../images/gaming19.jpg");
+  background-repeat: no-repeat;
+  padding: 500px;
+  background-size: cover;
+  text-align: center;
+}
+.teamheader h1 {
+  color: aqua;
+  margin-top: -350px;
+}
+.teamheader h3 {
+  color: plum;
+}
+.teamcontent {
+  color: white;
+}
+.sponsors {
+  background-image: url("../images/gaming10.jpg");
+  background-repeat: no-repeat;
+  padding: 500px;
+  background-size: cover;
+  text-align: center;
+}
+.sponsors h1 {
+  color: aqua;
+  margin-top: -450px;
+}
+.sponsors h3 {
+  color: plum;
+}
+.sponsorscontent {
+  color: white;
+}
+.contact {
+  background-image: url("../images/gaming9.jpg");
+  background-repeat: no-repeat;
+  padding: 500px;
+  background-size: cover;
+  text-align: center;
+}
+.contact h1 {
+  color: aqua;
+  margin-top: -450px;
+}
+.contact h3 {
+  color: plum;
+}
+.contactcontent {
+  color: white;
+}
+.aboutsubscribe {
+  margin-left: 150px;
+}
 .sticky {
   position: fixed;
   top: 0;
