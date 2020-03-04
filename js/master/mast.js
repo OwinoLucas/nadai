@@ -15,13 +15,13 @@ function stickNav() {
 }
 
 //Login
-//var modal = document.getElementById('login-form');
+var modal = document.getElementById('login-form');
 
-//window.onclick = function (event) {
-//if (event.target == modal) {
-// modal.style.display = "none";
-//}
-//}
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 $("form").submit(function (event) {
   event.preventDefault();
 });

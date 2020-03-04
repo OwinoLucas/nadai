@@ -1,12 +1,23 @@
 /*HOME*/
 body {
-  background-color: #3e8e41;
+  background-image: url(../../images/wp4411626-keanu-reeves-cyberpunk-2077-wallpapers.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
+/*slideshow*/
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /*navbar*/
 .navbar {
   z-index: 1;
+  width: 100%;
 }
 
 .dropbtn {
@@ -55,6 +66,13 @@ body {
   background-color: #3e8e41;
 }
 
+.nav-link {
+  padding-top: 22px;
+}
+
+.nav-items {
+  float: right !important;
+}
 
 /*sticky navbar*/
 
@@ -73,7 +91,7 @@ body {
 }
 
 /*Login*/
-.topnav-right {
+.butt {
   float: right;
 }
 
@@ -87,7 +105,7 @@ input[type=password] {
   box-sizing: border-box;
 }
 
-.mloginb {
+button {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -219,3 +237,9 @@ span.psw {
   background-color: red;
   font-weight: bold;
 }
+
+/*@media screen and (min-width: 450px) {
+  .butt {
+    margin-left: 1080px;
+  }
+}*/
