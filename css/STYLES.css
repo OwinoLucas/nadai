@@ -52,6 +52,9 @@
   background-color: #3e8e41;
 }
 
+.container2{
+  z-index: 0;
+}
 /*toggle function for window games*/
 .hide1{
     display: none;
