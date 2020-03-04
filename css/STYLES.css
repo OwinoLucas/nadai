@@ -1,3 +1,13 @@
+body{
+  background-image: url("../images/59-593267_call-of-duty.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+  opacity: 0.96;
+}
 
 /*navbar*/
 .navbar {
@@ -53,8 +63,12 @@
 }
 
 .container2{
-  z-index: 0;
+  z-index: -3;
 }
+.container{
+  margin-top: 0.95%;
+}
+
 /*toggle function for window games*/
 .hide1{
     display: none;
