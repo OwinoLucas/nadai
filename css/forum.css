@@ -1,0 +1,14 @@
+
+.jumbotron {
+  color: #3e8e41;
+}
+
+body {
+  background-image: url(../images/261306.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+.icons {
+  text-align: center;
+}
