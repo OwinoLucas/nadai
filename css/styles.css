@@ -70,3 +70,10 @@ table, th, td {
 .jumbotron {
   color: #3e8e41;
 }
+
+.body {
+  background-image: url(../images/keyboard-gaming-moody-gamer-3165335.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
