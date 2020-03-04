@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //js for windows games//
 $(document).ready(function(){
     $("#press").click(function(){
@@ -75,7 +74,6 @@ function showSlides() {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds 
-=======
 //sticky navbar
 window.onscroll = function () {
   stickNav()
@@ -90,5 +88,4 @@ function stickNav() {
   } else {
     navbar.classList.remove("sticky");
   }
->>>>>>> 671a45a272833ccb8bc99c27a369b293af3cd41c
 }
