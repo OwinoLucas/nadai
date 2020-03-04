@@ -55,9 +55,6 @@ body {
   background-color: #3e8e41;
 }
 
-.nav-link {
-  padding-top: 22px;
-}
 
 /*sticky navbar*/
 
@@ -76,10 +73,8 @@ body {
 }
 
 /*Login*/
-.mloginb {
+.topnav-right {
   float: right;
-  justify-content: right;
-  text-align: right;
 }
 
 input[type=text],
@@ -92,7 +87,7 @@ input[type=password] {
   box-sizing: border-box;
 }
 
-button {
+.mloginb {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
