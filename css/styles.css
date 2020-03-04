@@ -61,19 +61,3 @@ body {
 .nav-item:hover {
   background-color: #3e8e41;
 }
-
-/*forum */ 
-table, th, td {
-  border: 1px solid black;
-}
-
-.jumbotron {
-  color: #3e8e41;
-}
-
-.body {
-  background-image: url(../images/keyboard-gaming-moody-gamer-3165335.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
