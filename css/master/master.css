@@ -46,11 +46,11 @@ body {
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fa0101, 0 0 40px #fa0101, 0 0 50px #fa0101, 0 0 60px #fa0101, 0 0 70px #fa0101;
   }
 
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    text-shadow: 0 0 30px #fff, 0 0 40px #3e8e41, 0 0 50px #3e8e41, 0 0 60px #3e8e41, 0 0 70px #3e8e41, 0 0 80px #3e8e41, 0 0 90px #3e8e41;
   }
 }
 
@@ -206,7 +206,6 @@ span.psw {
   border: 1px solid #888;
   width: 80%;
   z-index: 2;
-  /* Could be more or less, depending on screen size */
 }
 
 .close {
@@ -224,10 +223,9 @@ span.psw {
   cursor: pointer;
 }
 
-/* Add Zoom Animation */
 .animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
+  -webkit-animation: animatezoom 0.9s;
+  animation: animatezoom 0.9s
 }
 
 @-webkit-keyframes animatezoom {
@@ -250,7 +248,6 @@ span.psw {
   }
 }
 
-/* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
     display: block;
@@ -260,6 +257,41 @@ span.psw {
   .cancelbtn {
     width: 100%;
   }
+}
+
+/*Scroll bar*/
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  background-color: #CCCCCC;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #D62929;
+  background-image: -webkit-linear-gradient(90deg,
+      transparent,
+      rgba(0, 0, 0, 0.4) 50%,
+      transparent,
+      transparent)
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3e8e41;
+  background-image: -webkit-linear-gradient(190deg,
+      transparent,
+      rgba(0, 0, 0, 0.4) 50%,
+      transparent,
+      transparent)
 }
 
 /*body*/
@@ -322,21 +354,6 @@ ol {
   margin: 0;
 }
 
-.social-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 23px;
-  font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.social-container .col {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 .nav-list li a:before {
   content: "\f14f";
   font: 400 21px/1 "Material Design Icons";
@@ -348,4 +365,47 @@ ol {
   opacity: 0;
   visibility: hidden;
   transition: .22s ease;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
 }
