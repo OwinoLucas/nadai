@@ -4,10 +4,9 @@ body {
   background-position: center;
   background-attachment: fixed;
   color: black;
-  font-weight: bolder;
-  font-size: larger;
+  font-size: large;
   opacity: 0.96;
-  font-family: 'Syncopate', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 /*navbar*/
@@ -353,16 +352,19 @@ span.psw {
 .card1 {
   background-color: white;
   opacity: 0.89;
+  padding: 5%;
 }
 
 .card2 {
   background-color: white;
   opacity: 0.89;
+  padding: 5%;
 }
 
 .card3 {
   background-color: white;
   opacity: 0.89;
+  padding: 5%;
 }
 
 #press {
@@ -387,4 +389,102 @@ span.psw {
 
 #press5 {
   color: white;
+}
+
+/* Media Queries: Tablet Landscape 
+@media screen and (max-width: 1060px) {
+  .container {
+    width: 67%;
+  }
+
+  .container {
+    width: 30%;
+    margin-left: 3%;
+  }
+}
+
+/* Media Queries: Tabled Portrait 
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+}*/
+
+
+/*responsiveness*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-device-width:800px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-device-width:1040px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width:640px) {
+  .vid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width:920px) {
+  .vid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width:1024px) {
+  .vid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*
+@media (max-width: 640px) {
+
+  .card1,
+  .card2,
+  .card3 {
+    font-size: 1rem;
+    column-width: 30%;
+  }
+}
+
+@media (max-width:960px) {
+
+  .card1,
+  .card2,
+  .card3 {
+    font-size: 1.2rem;
+    column-width: 30%;
+  }
+}
+
+@media (max-width:1100px) {
+
+  .card1,
+  .card2,
+  .card3 {
+    font-size: 1.5rem;
+    column-width: 30%;
+  }
 }
