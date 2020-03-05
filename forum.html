@@ -1,14 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html 
+lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/forum.css">
+  <link rel="stylesheet" href="css/joel.css">
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Gloria+Hallelujah|Homemade+Apple|Kaushan+Script|Marck+Script|Orbitron|Press+Start+2P|Rock+Salt|Satisfy|Trade+Winds&display=swap" rel="stylesheet">
   <title>FAQS & Comments</title>
 </head>
 <body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="navbar">
+    <a class="navbar-brand" href="index.html">NADAI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="dropbtn">PC-GAMES
+            </button>
+            <div class="dropdown-content">
+              <a href="windows.html">Windows Games</a>
+              <a href="linux.html">Linux Games</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="forum.html">FORUM</a>
+        </li>
+      </ul>
+      <div class="navbar-collapse collapse">
+        <ul class="navbar-nav ml-auto mr-1">
+          <li class="nav-item ml-auto mr-1" style="float: right;">
+            <button type="button" class="mloginb" onclick="document.getElementById('login-form').style.display='block'"
+              style="width:auto;">Login</button>
+          </li>
+        </ul>
+      </div>
+      <div id="login-form" class="modal">
+        <form class="modal-content animate" action="" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('login-form').style.display='none'" class="close"
+              title="Close Modal">&times;</span>
+            <img src="images/brian.jpeg" alt="Avatar" class="avatar">
+          </div>
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="button">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('login-form').style.display='none'"
+              class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+
   <div class="container">
     <div class="card">
       <div class="card-header">
@@ -103,5 +171,4 @@
         </div>
       </div>
 </body>
-
 </html>
