@@ -25,20 +25,3 @@ window.onclick = function (event) {
 $("form").submit(function (event) {
   event.preventDefault();
 });
-
-//Typewriter
-var i = 0;
-var txt = 'HOME OF THE BEST GAMES';
-var speed = 50;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-    loop: true;
-  }
-  if (cursorPosition == HTML.length - 1) {
-    setTimeout(reinit, 10000);
-  }
-}
