@@ -31,7 +31,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   mix-blend-mode: screen;
-  /* This makes the cutout text possible */
 }
 
 .carousel-caption {
@@ -370,6 +369,21 @@ span.psw {
 
 .checked {
   color: orange;
+}
+
+.zoom {
+  transition: transform .9s;
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  height: 100%;
 }
 
 /*Footer*/
