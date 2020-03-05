@@ -5,14 +5,15 @@
   <title>NADAI GAME REVIEW</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/master/master.css">
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -21,22 +22,24 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="images/GoW3.jpg" alt="First slide" height="600px">
+        <img class="d-block w-100" src="images/GoW3.jpg" alt="First slide" max-height="600px">
         <div class="carousel-caption d-none d-md-block">
-          <h1 class="glow" onclick="typeWriter()"><strong>NADAI GAME REVIEW</strong></h1>
-          <p id="demo"></p>
+          <h1>NADAI</h1>
+          <p>...</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="images/slide2.jpg" alt="Second slide" height="600px">
+        <img class="d-block w-100" src="images/slide2.jpg" alt="Second slide" max-height="600px">
         <div class="carousel-caption d-none d-md-block">
-          <h1 class="glow" onclick="typeWrite()"><strong>NADAI GAME REVIEW</strong></h1>
+          <h1>NADAI GAME REVIEW</h1>
+          <p>...</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="images/slide3.jpg" alt="Third slide" height="600px">
+        <img class="d-block w-100" src="images/slide3.jpg" alt="Third slide" max-height="600px">
         <div class="carousel-caption d-none d-md-block">
-          <h1 class="glow" onclick="typeWrit()"><strong>NADAI GAME REVIEW</strong></h1>
+          <h1>NADAI GAME REVIEW</h1>
+          <p>...</p>
         </div>
       </div>
     </div>
@@ -59,7 +62,7 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">HOME</a>
+          <a class="nav-link" href="index.html">HOME</a>
         </li>
         <li class="nav-item">
           <div class="dropdown">
@@ -98,6 +101,7 @@
             <input type="text" placeholder="Enter Username" name="uname" required>
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required>
+
             <button type="button">Login</button>
             <label>
               <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -126,88 +130,39 @@
             <img class="card-img-top" src="images/csgo.jpeg" alt="Card image cap" width="286" height="180">
             <div class="card-body">
               <h5 class="card-title">CS:GO</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Action, Shooter</h6>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Duration: <span class="badge badge-primary badge-pill">10 mins</span></li>
-                <li class="list-group-item">PG Rating: <span class="badge badge-primary badge-pill">16+</span></li>
-                <li class="list-group-item">Game rating
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                  </div>
-                </li>
-              </ul>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
             </div>
-            <a href="linux.html" class="morebtn btn-success">More</a>
           </div>
           <div class="card border-danger" style="width: 18rem;">
             <img class="card-img-top" src="images/dirt logo.jpeg" alt="Card image cap" width="286" height="180">
             <div class="card-body">
               <h5 class="card-title">Dirt Rally</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Racing, Simulation</h6>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Duration: <span class="badge badge-primary badge-pill">10-30 mins</span>
-                </li>
-                <li class="list-group-item">PG Rating: <span class="badge badge-primary badge-pill">12+</span></li>
-                <li class="list-group-item">Game rating
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-              </ul>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
             </div>
-            <a href="linux.html" class="morebtn btn-danger">More</a>
           </div>
           <div class="card border-success" style="width: 18rem;">
             <img class="card-img-top" src="images/Call-of-Duty-Black-Ops-4-latest-updates.jpg" alt="Card image cap"
               width="286" height="180">
             <div class="card-body">
               <h5 class="card-title">Call of Duty</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Action, Shooter</h6>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Duration: <span class="badge badge-primary badge-pill">30 mins</span></li>
-                <li class="list-group-item">PG Rating: <span class="badge badge-primary badge-pill">16+</span></li>
-                <li class="list-group-item">Game rating
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-              </ul>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
             </div>
-            <a href="windows.html" class="morebtn btn-success">More</a>
           </div>
           <div class="card border-danger" style="width: 18rem;">
             <img class="card-img-top" src="images/ts-apex-legends-free-to-play-battle-royale_0.jpg" alt="Card image cap"
               width="286" height="180">
             <div class="card-body">
               <h5 class="card-title">Apex Legends</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Action, Shooter</h6>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Duration: <span class="badge badge-primary badge-pill">30 mins</span></li>
-                <li class="list-group-item">PG Rating: <span class="badge badge-primary badge-pill">16+</span></li>
-                <li class="list-group-item">Game rating
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-              </ul>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
             </div>
-            <a href="windows.html" class="morebtn btn-danger">More</a>
           </div>
         </div>
         <br>
@@ -217,88 +172,39 @@
               height="180">
             <div class="card-body">
               <h5 class="card-title">God of War</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Action, Adventure</h6>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Duration: <span class="badge badge-primary badge-pill">10-50mins</span></li>
-                <li class="list-group-item">PG Rating: <span class="badge badge-primary badge-pill">14+</span></li>
-                <li class="list-group-item">Game rating
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-              </ul>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
             </div>
-            <a href="windows.html" class="morebtn btn-danger">More</a>
           </div>
           <div class="card border-success" style="width: 18rem;">
             <img class="card-img-top" src="images/42e1c947879636fa9bbd540af591fd01_crop_north.jpg" alt="Card image cap"
               width="286" height="180">
             <div class="card-body">
               <h5 class="card-title">NBA 2K20</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Sport</h6>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Duration: <span class="badge badge-primary badge-pill">30 mins</span></li>
-                <li class="list-group-item">PG Rating: <span class="badge badge-primary badge-pill">12+</span></li>
-                <li class="list-group-item">Game rating
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-              </ul>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
             </div>
-            <a href="windows.html" class="morebtn btn-success">More</a>
           </div>
           <div class="card border-danger" style="width: 18rem;">
             <img class="card-img-top" src="images/8b81d63f-aeea-41ed-aa57-59c2aa8eaf41.jpeg" alt="Card image cap"
               width="286" height="180">
             <div class="card-body">
               <h5 class="card-title">Assassins Creed Odessey</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Action, Adventure</h6>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Duration: <span class="badge badge-primary badge-pill">30-60 mins</span>
-                </li>
-                <li class="list-group-item">PG Rating: <span class="badge badge-primary badge-pill">16+</span></li>
-                <li class="list-group-item">Game rating
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                  </div>
-                </li>
-              </ul>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
             </div>
-            <a href="windows.html" class="morebtn btn-danger">More</a>
           </div>
           <div class="card border-success" style="width: 18rem;">
             <img class="card-img-top" src="images/maxresdefault.jpg" alt="Card image cap" width="286" height="180">
             <div class="card-body">
               <h5 class="card-title">Cover Fire</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Action, Shooter</h6>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Duration: <span class="badge badge-primary badge-pill">30 mins</span></li>
-                <li class="list-group-item">PG Rating: <span class="badge badge-primary badge-pill">14+</span></li>
-                <li class="list-group-item">Game rating
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-              </ul>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
             </div>
-            <a href="windows.html" class="morebtn btn-success">More</a>
           </div>
         </div>
         <br>
@@ -308,104 +214,54 @@
               alt="Card image cap" width="286" height="180">
             <div class="card-body">
               <h5 class="card-title">Shadow of Mordor</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Action, Adventure</h6>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Duration: <span class="badge badge-primary badge-pill">10-60 mins</span>
-                </li>
-                <li class="list-group-item">PG Rating: <span class="badge badge-primary badge-pill">14+</span></li>
-                <li class="list-group-item">Game rating
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-              </ul>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
             </div>
-            <a href="linux.html" class="morebtn btn-success">More</a>
           </div>
           <div class="card border-danger" style="width: 18rem;">
             <img class="card-img-top" src="images/dota2.jpg" alt="Card image cap" width="286" height="180">
             <div class="card-body">
               <h5 class="card-title">Dota 2</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Adventure</h6>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Duration: <span class="badge badge-primary badge-pill">30 mins</span></li>
-                <li class="list-group-item">PG Rating: <span class="badge badge-primary badge-pill">12+</span></li>
-                <li class="list-group-item">Game rating
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-              </ul>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
             </div>
-            <a href="linux.html" class="morebtn btn-danger">More</a>
           </div>
           <div class="card border-success" style="width: 18rem;">
             <img class="card-img-top" src="images/division.jpg" alt="Card image cap" width="286" height="180">
             <div class=" card-body">
               <h5 class="card-title">Division 2</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Action, Shooter</h6>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Duration: <span class="badge badge-primary badge-pill">10-60 mins</span>
-                </li>
-                <li class="list-group-item">PG Rating: <span class="badge badge-primary badge-pill">14+</span></li>
-                <li class="list-group-item">Game rating
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-              </ul>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
             </div>
-            <a href="windows.html" class="morebtn btn-success">More</a>
           </div>
           <div class="card border-danger" style="width: 18rem;">
-            <img class="card-img-top" src="images/tomb.jpg" alt="Card image cap" width="286" height="180">
+            <img class="card-img-top" src="..." alt="Card image cap" width="286" height="180">
             <div class=" card-body">
-              <h5 class="card-title">Tomb Rider</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Action, Adventure</h6>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Duration: <span class="badge badge-primary badge-pill">30 mins</span></li>
-                <li class="list-group-item">PG Rating: <span class="badge badge-primary badge-pill">14+</span></li>
-                <li class="list-group-item">Game rating
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-              </ul>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">More</a>
             </div>
-            <a href="#" class="morebtn btn-danger">Coming Soon</a>
           </div>
         </div>
       </div>
     </div>
     <br>
-    <div class="card border-success">
-      <div class="card-header green">
-        <h2><strong>NEWS</strong></h2>
+    <div class="card">
+      <div class="card-header red">
+        <h2>NEWS</h2>
       </div>
       <div class="card-body">
         <div class="card">
-          <div class="card-header bg-gray">
+          <div class="card-header">
             <h2>The gaming chair has been replaced by the gaming bed</h2>
             <h5>Mar 3, 2020</h5>
           </div>
           <div class="card-body">
-            <img class="card-img-top zoom" src="images/concept_gaming_bed_6.0.webp" alt="">
+            <img class="card-img-top" src="images/concept_gaming_bed_6.0.webp" alt="">
             <p>Japanese retailer Bauhutte sells a great deal of furniture aimed at “gamers,”
               but few can top its one-stop shop for sleep and gaming. Like Voltron, but made
               for people who refuse to use major muscle groups, the Bauhutte “ultimate gaming bed”
@@ -420,27 +276,15 @@
         </div>
         <br>
         <div class="card">
-          <div class="card-header bg-gray">
-            <h2>Cyberpunk 2077</h2>
+          <div class="card-header">
+            <h2>CYBERPUNK 2077</h2>
             <h5>Mar 4, 2020</h5>
           </div>
           <div class="card-body">
-            <img class="card-img-top zoom" src="images/cyberpunk.jpg" alt="">
-            <p>Cyberpunk 2077 is an upcoming role-playing video game developed and published by CD Projekt.
-              It is scheduled to be released for Microsoft Windows, PlayStation 4, Stadia, and Xbox One on
-              17 September 2020. Adapted from the Cyberpunk franchise, it takes place in dystopian Night City,
-              an open world with six distinct regions. Players assume the role of the customisable mercenary V
-              in a first-person perspective, acquiring skills in hacking and machinery, an arsenal of ranged
-              weapons, and options for melee combat. Both lethal and non-lethal playthroughs are possible.</p>
-            <p>Cyberpunk 2077 is played in a first-person perspective as V, a mercenary whose voice, face,
-              hairstyles, body type and modifications, background, and clothing are customisable. Stat
-              categories—Body, Intelligence, Reflexes, Technical, and Cool—are influenced by the character
-              classes that players assume, which are NetRunner (hacking), Techie (machinery), and Solo (combat).
-              The perk tree branches into melee, blades, handguns, shotguns, rifles, sniper rifles, hacking,
-              two-handed combat, assassination, "cold blood", engineering, and athletics. V must consult a
-              "ripperdoc" to upgrade and purchase cyberware implants; black markets offer military-grade
-              abilities. The rarity of any given equipment is shown by a coloured tier system.
-              V can take cover, aim, run on the ground and walls, jump, double jump, and slide.</p>
+            <img class="card-img-top" src="images/cyberpunk.jpg" alt="">
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco.</p>
             <br>
           </div>
         </div>
@@ -452,63 +296,8 @@
   </div>
   <!--FOOTER-->
   <div class="jumbotron text-center" style="margin-bottom:0">
-    <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
-      <div class="container">
-        <div class="row row-30">
-          <div class="col-md-4 col-xl-5">
-            <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src=".." alt=""
-                  width="285" height="190"></a>
-              <p>We are an award-winning game review site, dedicated to the best result in gaming review, and jounalism,
-              </p>
-              <!-- Rights-->
-              <p class="rights"><span>©  </span><span class="copyright-year">2020</span><span> </span><span>Nadai Game
-                  Review</span><span>. </span><span>All Rights
-                  Reserved.</span></p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h5>Contacts</h5>
-            <dl class="contact-list">
-              <dt>Address:</dt>
-              <dd>P.O.Box 28860-00100</dd>
-            </dl>
-            <dl class="contact-list">
-              <dt>Location:</dt>
-              <dd>Ngong Lane Plaza, Ngong Lane. Nairobi</dd>
-            </dl>
-            <dl class="contact-list">
-              <dt>email:</dt>
-              <dd><a href="mailto:#">nadaigame@gmail.com</a></dd>
-            </dl>
-            <dl class="contact-list">
-              <dt>phones:</dt>
-              <dd><a href="tel:#">07** *** ***</a> <span>or</span> <a href="tel:#">07** *** ***</a>
-              </dd>
-            </dl>
-          </div>
-          <div class="col-md-4 col-xl-3">
-            <h5>Links</h5>
-            <ul class="nav-list">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="windows.html">Windows Games</a></li>
-              <li><a href="linux.html">Linux Games</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="forum.html">Forums</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <br>
-    </footer>
-    <br>
-    <div>
-      <a href="#" class="fa fa-facebook icn"></a>
-      <a href="#" class="fa fa-twitter icn"></a>
-      <a href="#" class="fa fa-google icn"></a>
-      <a href="#" class="fa fa-linkedin icn"></a>
-      <a href="#" class="fa fa-youtube icn"></a>
-      <a href="#" class="fa fa-instagram icn"></a>
-    </div>
+    <p>Footer</p>
+  </div>
   </div>
   <script src="js/bootstrap.js"></script>
   <script src="js/jquery-3.4.1.js.js"></script>
