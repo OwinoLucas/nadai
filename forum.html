@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/forum.css">
+  <link rel="stylesheet" href="css/joel.css">
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Gloria+Hallelujah|Homemade+Apple|Kaushan+Script|Marck+Script|Orbitron|Press+Start+2P|Rock+Salt|Satisfy|Trade+Winds&display=swap" rel="stylesheet">
+  <title>FAQS & Comments</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="navbar">
+    <a class="navbar-brand" href="index.html">NADAI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="dropbtn">PC-GAMES
+            </button>
+            <div class="dropdown-content">
+              <a href="windows.html">Windows Games</a>
+              <a href="linux.html">Linux Games</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="forum.html">FORUM</a>
+        </li>
+      </ul>
+      <div class="navbar-collapse collapse">
+        <ul class="navbar-nav ml-auto mr-1">
+          <li class="nav-item ml-auto mr-1" style="float: right;">
+            <button type="button" class="mloginb" onclick="document.getElementById('login-form').style.display='block'"
+              style="width:auto;">Login</button>
+          </li>
+        </ul>
+      </div>
+      <div id="login-form" class="modal">
+        <form class="modal-content animate" action="" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('login-form').style.display='none'" class="close"
+              title="Close Modal">&times;</span>
+            <img src="images/brian.jpeg" alt="Avatar" class="avatar">
+          </div>
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="button">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('login-form').style.display='none'"
+              class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <div class="jumbotron">
+          <h1>Nadai Gamers Help Center</h1>
+          <h2>Game FAQs & Contact </h2>
+          <p>We aim to answer your questions about video games, no matter how big or small.
+            If you have an answered question check on our frequently asked question. </p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="questions">
+          <div class="card-text">
+            <h2>FAQs</h2>
+            <p><strong>What are Age ratings ?</strong> <br>
+              Age ratings ensure that entertainment content, such as films, videos, DVDs, and computer and video games,
+              is
+              clearly labelled for the minimum age group for which it is suitable.
+              Age ratings provide guidance to consumers to help them decide whether or not to buy a particular product.
+            </p> <br>
+            <p><strong>Which games should one play ?</strong> <br>
+              There are a number of games of which mostly depends on your gaming plattform whether pc, ps4, xbox or
+              nintendo.
+              Over the years more and more games have been made over all gaming plattforms including android !</p> <br>
+            <p><strong>How can my friends and family enjoy games</strong> <br>
+              Video games, played appropriately can be a great addition to other activities you do as a family.
+              Here are some key points to remember for parents:
+              <ol>
+                The ratings of the game . <br>
+                The type of game .
+              </ol>
+              <p><strong>Where can one purchase games</strong> <br>
+                One could buy games in most retailers that sell games .
+                there are a number in Nairobi:
+                <li> <a href="https://vividgold.co.ke/">Vivid Gold</a></li>
+                <li> <a href="https://www.xgamertechnologies.com/">X GamersTec</a></li>
+                <li><a href="http://gamechanger.co.ke/">GameChanger</a></li>
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Commments</h2>
+        <div card-img-top>
+          <img src="/images/gamer3.png" alt="" width="50px">
+          <div class="card-title">
+            Gamer1
+          </div>
+          <div class="card-body">
+            <p class="card-text">Best gaming review site right now .</p>
+          </div>
+        </div>
+        <div class="card">
+          <div card-img-top>
+            <img src="/images/girl.png" alt="" width="50px">
+            <div class="card-title">
+              Gamer2
+            </div>
+            <div class="card-body">
+              <p class="card-text">Thank you for giving me the best games to get.</p>
+            </div>
+          </div>
+          <div card-img-top>
+            <img src="/images/man (1).png" alt="" width="50px">
+            <div class="card-title">
+              Gamer3
+            </div>
+            <div class="card-body">
+              <p class="card-text">How do you get the best games right now for free.</p>
+            </div>
+          </div>
+          <div card-img-top>
+            <img src="/images/man.png" alt="" width="50px">
+            <div class="card-title">
+              Gamer4
+            </div>
+            <div class="card-body">
+              <p class="card-text">Best games right now are ?</p>
+            </div>
+          </div>
+          <textarea rows="9" placeholder="Type your message here..." style="background-color:black"
+            style="text-emphasis-color:white" id="Message"></textarea>
+          <br>
+          <button type="button" class="btn btn-primary">Submit </button>
+          <div class="icons">
+           <h4> Contact Us :</h4>
+            <a href="https://twitter.com/home"><img src="/images/twitter.png" alt=""></a>
+            <a href="https://www.youtube.com/"><img src="/images/you_tube.png" alt=""></a>
+            <a href="https://www.facebook.com/"><img src="/images/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><img src="/images/logo.jpeg" alt="" width="120px"></a>
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>
