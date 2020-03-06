@@ -7,11 +7,73 @@ body {
 }
 
 /*slideshow*/
+#carouselExampleIndicators {
+  z-index: 1;
+}
+
+.d-block {
+  position: relative;
+  object-fit: cover;
+}
+
+#demo {
+  color: #000000;
+  background-color: white;
+  color: black;
+  font-size: 2vw;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
 .carousel-caption {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.carousel-text {
+  background-color: black;
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: multiply;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fa0101, 0 0 40px #fa0101, 0 0 50px #fa0101, 0 0 60px #fa0101, 0 0 70px #fa0101;
+  }
+
+  to {
+    text-shadow: 0 0 30px #fff, 0 0 40px #3e8e41, 0 0 50px #3e8e41, 0 0 60px #3e8e41, 0 0 70px #3e8e41, 0 0 80px #3e8e41, 0 0 90px #3e8e41;
+  }
 }
 
 /*navbar*/
@@ -166,7 +228,6 @@ span.psw {
   border: 1px solid #888;
   width: 80%;
   z-index: 2;
-  /* Could be more or less, depending on screen size */
 }
 
 .close {
@@ -184,10 +245,9 @@ span.psw {
   cursor: pointer;
 }
 
-/* Add Zoom Animation */
 .animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
+  -webkit-animation: animatezoom 0.9s;
+  animation: animatezoom 0.9s
 }
 
 @-webkit-keyframes animatezoom {
@@ -210,7 +270,6 @@ span.psw {
   }
 }
 
-/* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
     display: block;
@@ -220,6 +279,41 @@ span.psw {
   .cancelbtn {
     width: 100%;
   }
+}
+
+/*Scroll bar*/
+::-webkit-scrollbar {
+  width: 30px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  width: 30px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #D62929;
+  background-image: -webkit-linear-gradient(90deg,
+      transparent,
+      rgba(0, 0, 0, 0.4) 50%,
+      transparent,
+      transparent)
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3e8e41;
+  background-image: -webkit-linear-gradient(190deg,
+      transparent,
+      rgba(0, 0, 0, 0.4) 50%,
+      transparent,
+      transparent)
 }
 
 /*body*/
@@ -232,14 +326,176 @@ span.psw {
   margin-top: 10px;
 }
 
+.morebtn {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.morebtn:hover {
+  opacity: 0.5;
+}
+
+.list-group {
+  margin: 0;
+}
+
 .red {
   color: #3e8e41;
   background-color: red;
   font-weight: bold;
 }
 
-/*@media screen and (min-width: 450px) {
-  .butt {
-    margin-left: 1080px;
-  }
-}*/
+.green {
+  color: red;
+  background-color: #3e8e41;
+}
+
+.bg-gray {
+  background-color: darkgray;
+}
+
+.fa-star {
+  font-size: 20px;
+}
+
+.checked {
+  color: orange;
+}
+
+.zoom {
+  transition: transform .9s;
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  height: 100%;
+}
+
+/*Footer*/
+.context-dark,
+.bg-gray-dark,
+.bg-primary {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a,
+.footer-classic a:focus,
+.footer-classic a:active {
+  color: #ffffff;
+}
+
+.nav-list li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+  margin-left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li a:before {
+  content: "\f14f";
+  font: 400 21px/1 "Material Design Icons";
+  color: #4d6de6;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: -28px;
+  margin-right: 7px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .22s ease;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
