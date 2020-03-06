@@ -8,7 +8,7 @@
 - Brian Otieno
 
 ## Description 
-One the website there are multiples games given their there reviews from the authors. The reviews are non-biased and has the writters comments.A website that reviews video games.
+A website that reviews video games.
 
 ## SetUp/Installations 
 - Download the url from the github page 
@@ -21,7 +21,7 @@ There are currently no know bugs but feel free to send your opinion to - ikaptog
 
 ## Tecnology Used 
 - HTML - We used html to make the landing pages in the website.
-- JavaScript - Used to make the page inteructive.
+- JavaScript - Used to make the page interactive.
 - CSS - We used css to do the styling of the website and to make it appeling.
 
 ## Projects live link 
