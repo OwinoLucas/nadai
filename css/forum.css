@@ -12,7 +12,7 @@ body {
   background-attachment: fixed;
   background-color: black;
   font-family: 'Rock Salt', cursive;
-  
+  opacity: 0.85;
 }
 
 .icons {
@@ -79,3 +79,4 @@ body {
 .sticky+.container {
   padding-top: 60px;
 }
+

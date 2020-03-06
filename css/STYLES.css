@@ -1,7 +1,18 @@
+body {
+  background-image: url("../images/59-593267_call-of-duty.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: black;
+  font-size: large;
+  opacity: 0.96;
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 0.5%;
+}
 
 /*navbar*/
 .navbar {
-  overflow: hidden;
+  width: 100%;
   z-index: 1;
 }
 
@@ -11,7 +22,7 @@
   font-size: 16px;
   border: none;
   justify-content: center;
-  padding-top: 8px;
+  padding-top: 13px;
 }
 
 .dropdown {
@@ -29,7 +40,7 @@
 }
 
 .dropdown-content a {
-  color: black;
+  color: blue;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -52,96 +63,430 @@
   background-color: #3e8e41;
 }
 
-/*toggle function for window games*/
-.hide1{
-    display: none;
+.nav-link {
+  padding-top: 22px;
+}
+
+.nav-items {
+  float: right !important;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky+.container {
+  padding-top: 60px;
+}
+
+/*Login*/
+.butt {
+  float: right;
+}
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(18, 206, 65);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  color: #000;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+  z-index: 2;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.9s;
+  animation: animatezoom 0.9s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
   }
-  .hide2{
-    display: none;
+
+  to {
+    -webkit-transform: scale(1)
   }
-  .hide3{
-    display: none;
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
   }
-  .hide4{
-    display: none;
+
+  to {
+    transform: scale(1)
   }
-  .hide5{
-    display: none;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
   }
-  .hide6{
-    display: none;
-  }
-  
-  /*slideshow for windows games*/
-  .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-   }
-   .mySlides {
-     display: none;
-   }
-   .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-   }
-   .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-   }
-   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-   }
-   .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
+
+  .cancelbtn {
     width: 100%;
-    text-align: center;
-   }
-   .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-   }
-   .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-   }
-   .active, .dot:hover {
-    background-color: #717171;
-   }
-   .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-   }
-   @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-   }
-   @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-   }
+  }
+}
+
+
+/*Scroll bar*/
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  background-color: #CCCCCC;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  background-color: #F5F5F5;
+}
+
+
+/*toggle function for window games*/
+.hide1 {
+  display: none;
+}
+
+.hide2 {
+  display: none;
+}
+
+.hide3 {
+  display: none;
+}
+
+.hide4 {
+  display: none;
+}
+
+.hide5 {
+  display: none;
+}
+
+.hide6 {
+  display: none;
+}
+
+/*slideshow for windows games*/
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.card1 {
+  background-color: white;
+  opacity: 0.89;
+  padding: 5%;
+}
+
+.card2 {
+  background-color: white;
+  opacity: 0.89;
+  padding: 5%;
+}
+
+.card3 {
+  background-color: white;
+  opacity: 0.89;
+  padding: 5%;
+}
+
+#press {
+  color: white;
+}
+
+#press1 {
+  color: white;
+}
+
+#press2 {
+  color: white;
+}
+
+#press3 {
+  color: white;
+}
+
+#press4 {
+  color: white;
+}
+
+#press5 {
+  color: white;
+}
+
+/* Media Queries: Tablet Landscape 
+@media screen and (max-width: 1060px) {
+  .container {
+    width: 67%;
+  }
+
+  .container {
+    width: 30%;
+    margin-left: 3%;
+  }
+}
+
+/* Media Queries: Tabled Portrait 
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+}*/
+
+
+/*responsiveness*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-device-width:800px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-device-width:1040px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width:640px) {
+  .vid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width:920px) {
+  .vid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width:1024px) {
+  .vid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*
+@media (max-width: 640px) {
+
+  .card1,
+  .card2,
+  .card3 {
+    font-size: 1rem;
+    column-width: 30%;
+  }
+}
+
+@media (max-width:960px) {
+
+  .card1,
+  .card2,
+  .card3 {
+    font-size: 1.2rem;
+    column-width: 30%;
+  }
+}
+
+@media (max-width:1100px) {
+
+  .card1,
+  .card2,
+  .card3 {
+    font-size: 1.5rem;
+    column-width: 30%;
+  }
+}
